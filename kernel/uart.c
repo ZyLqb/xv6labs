@@ -53,6 +53,7 @@ void
 uartinit(void)
 {
   // disable interrupts.
+  // WriteReg(IER, 0x00);
   WriteReg(IER, 0x00);
 
   // special mode to set baud rate.
